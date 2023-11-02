@@ -89,6 +89,9 @@ const sx = () => {
                             width: '2.375rem',
                             maxWidth: '2.375rem',
                             height: '2.375rem',
+                            '&:hover': {
+                                backgroundColor: palette.lightdark,
+                            },
                             '& > a': {
                                 display: 'flex',
                             },

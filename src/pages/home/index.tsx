@@ -3,10 +3,6 @@ import { Hero } from "./components/hero";
 import { sx } from './sx';
 import about from '../../assets/img/about.png';
 import { ContentBox, Headline, Image, MuiDialog } from "../../components/design-system";
-import FacebookIcon from '../../assets/img/svg-icons/facebook.svg';
-import XTwitterIcon from '../../assets/img/svg-icons/x-twitter.svg';
-import InstagramIcon from '../../assets/img/svg-icons/instagram.svg';
-import WhatsappIcon from '../../assets/img/svg-icons/whatsapp.svg';
 import CloseIcon from '@mui/icons-material/Close';
 
 import React from "react";

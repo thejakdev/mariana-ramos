@@ -34,6 +34,9 @@ const sx = () => {
                 width: matches ? '54px' : '44px',
                 maxWidth: matches ? '54px' : '44px',
                 height: matches ? '54px' : '44px',
+                '&:hover': {
+                    backgroundColor: palette.lightdark,
+                },
                 '& > a': {
                     display: 'flex',
                 },
