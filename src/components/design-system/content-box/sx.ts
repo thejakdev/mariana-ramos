@@ -21,6 +21,9 @@ const sx = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                '&>div': {
+                    lineHeight: 0,
+                }
             },
             info: {
                 base: {

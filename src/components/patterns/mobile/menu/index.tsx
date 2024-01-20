@@ -1,12 +1,9 @@
 import Box from "@mui/material/Box"
-import FacebookIcon from '../../../../assets/img/svg-icons/facebook.svg';
-import XTwitterIcon from '../../../../assets/img/svg-icons/x-twitter.svg';
-import InstagramIcon from '../../../../assets/img/svg-icons/instagram.svg';
-import WhatsappIcon from '../../../../assets/img/svg-icons/whatsapp.svg';
 import { Container, Divider, IconButton, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { sx } from './sx';
 import React from "react";
 import { socialList } from '../../../../static';
+import { ReactSVG } from 'react-svg'
 
 interface MobileMenuProps {
     children: React.ReactNode;
@@ -65,12 +62,18 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ children }: MobileMenuProps) =>
                                         aria-label={title}
                                         sx={css.header.nav.mobile.social.button}
                                     >
-                                        <a
+                                        <Box
+                                            component='a'
                                             rel='noopener noreferrer'
                                             href={href}
-                                            target='_blank'>
-                                            <img src={icon} />
-                                        </a>
+                                            target='_blank'
+                                            sx={{
+                                                '&>div': {
+                                                    lineHeight: 0,
+                                                }
+                                            }}>
+                                            <ReactSVG src={icon} />
+                                        </Box>
                                     </IconButton>
                                 )
                             })}

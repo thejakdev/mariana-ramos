@@ -9,6 +9,7 @@ import React from "react";
 import { ToggleStaticProps } from "../../interfaces";
 import { Patterns } from "../../components";
 import { data, socialList } from "../../static";
+import { ReactSVG } from 'react-svg'
 
 interface ContentDataProps {
     id: string;
@@ -195,12 +196,18 @@ const Home: React.FC = () => {
                                             aria-label={title}
                                             sx={css.social.button}
                                         >
-                                            <a
+                                            <Box
+                                                component='a'
                                                 rel='noopener noreferrer'
                                                 href={href}
-                                                target='_blank'>
-                                                <img src={icon} />
-                                            </a>
+                                                target='_blank'
+                                                sx={{
+                                                    '&>div': {
+                                                        lineHeight: 0,
+                                                    }
+                                                }}>
+                                                <ReactSVG src={icon} />
+                                            </Box>
                                         </IconButton>
                                     )
                                 })}

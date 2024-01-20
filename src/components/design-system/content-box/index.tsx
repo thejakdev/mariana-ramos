@@ -2,6 +2,8 @@ import { Box, Typography, Button, useTheme } from "@mui/material"
 import { sx } from './sx';
 import AddIcon from '@mui/icons-material/Add';
 
+import { ReactSVG } from 'react-svg'
+
 interface ContentBoxProps {
     title: string;
     text: string;
@@ -16,7 +18,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({ title, text, icon, onClick }: C
     return (
         <Box sx={css.box.base}>
             <Box sx={css.box.icon}>
-                <img src={icon} alt='icon house' />
+                <ReactSVG src={icon} />
             </Box>
             <Box sx={css.box.info.base}>
                 <Typography

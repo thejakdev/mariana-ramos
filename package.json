@@ -18,6 +18,7 @@
     "react-dom": "latest",
     "react-router-dom": "^6.18.0",
     "react-scripts": "latest",
+    "react-svg": "^16.1.32",
     "sass": "^1.69.5",
     "styled-components": "latest"
   },
