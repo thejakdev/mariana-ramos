@@ -1,11 +1,11 @@
 // icons
-import house from '../assets/img/svg-icons/house.svg';
-import briefcase from '../assets/img/svg-icons/briefcase.svg';
-import gavel from '../assets/img/svg-icons/gavel.svg';
-import personCane from '../assets/img/svg-icons/person-cane.svg';
-import userDoctor from '../assets/img/svg-icons/user-doctor.svg';
-import handcuffs from '../assets/img/svg-icons/handcuffs.svg';
-import houseUser from '../assets/img/svg-icons/house-user.svg';
+import house from '../assets/img/png-icons/icon-1.png';
+import briefcase from '../assets/img/png-icons/icon-2.png';
+import gavel from '../assets/img/png-icons/icon-3.png';
+import personCane from '../assets/img/png-icons/icon-4.png';
+import userDoctor from '../assets/img/png-icons/icon-5.png';
+import handcuffs from '../assets/img/png-icons/icon-6.png';
+import houseUser from '../assets/img/png-icons/icon-7.png';
 
 // covers
 import familia from '../assets/img/familia.png';

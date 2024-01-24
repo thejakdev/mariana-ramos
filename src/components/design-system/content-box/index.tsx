@@ -18,7 +18,8 @@ const ContentBox: React.FC<ContentBoxProps> = ({ title, text, icon, onClick }: C
     return (
         <Box sx={css.box.base}>
             <Box sx={css.box.icon}>
-                <ReactSVG src={icon} />
+                {/* <ReactSVG src={icon} /> */}
+                <img src={icon} alt={title} />
             </Box>
             <Box sx={css.box.info.base}>
                 <Typography
@@ -28,7 +29,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({ title, text, icon, onClick }: C
                     fontWeight={typography.fontWeightMedium}
                     mb='10px'
                     sx={css.box.title}>
-                        {title}
+                    {title}
                 </Typography>
                 <Typography
                     variant="body1"

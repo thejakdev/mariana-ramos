@@ -21,8 +21,9 @@ const sx = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                '&>div': {
-                    lineHeight: 0,
+                '&>img': {
+                    height: 'auto',
+                    width: 'auto',
                 }
             },
             info: {
